@@ -1,3 +1,8 @@
+# Roues PyTorch CUDA 12.9 (GPU NVIDIA sous Windows/Linux).
+# Elles ne sont pas sur PyPI : pip les cherche sur l'index PyTorch.
+# Sur macOS ou sans GPU NVIDIA, pip retombe sur les roues standard de PyPI.
+--extra-index-url https://download.pytorch.org/whl/cu129
+
 accelerate==1.10.1
 aiofiles==24.1.0
 annotated-types==0.7.0
@@ -55,8 +60,8 @@ starlette==0.48.0
 sympy==1.14.0
 tokenizers==0.22.1
 tomlkit==0.13.3
-torch==2.8.0+cu129
-torchvision==0.23.0+cu129
+torch==2.8.0
+torchvision==0.23.0
 tqdm==4.67.1
 transformers==4.56.2
 typer==0.19.2
